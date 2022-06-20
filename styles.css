@@ -1,0 +1,782 @@
+*{
+  padding:0;
+  margin:0;
+  text-decoration:none;
+}
+
+html{
+  overflow-X:hidden;
+  
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#FDF5F5;
+}
+
+section{
+  min-height:100vh;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+
+/*Header*/
+
+
+header{
+  width:100%;
+}
+
+header .nav{
+  display:flex;
+}
+
+header .nav .nav-bar{
+  position:fixed;
+  right:0;
+  z-index:1000;
+  
+   margin-top:1rem;
+  padding-top:0.5rem;
+}
+
+header .nav .nav-bar  a{
+  font-family:"Roboto",sans-serif;
+  
+  font-size:17px;
+  font-weight:normal;
+  color:#000000;
+  
+  margin-right:2rem;
+  padding-right:2rem;
+}
+
+header .nav .nav-bar a:hover{
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+
+
+
+/*Home*/
+
+.home{
+  display:flex;
+  
+  background-image:url("IMG/rectangulo.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.home .titulo{
+  display:block;
+  
+  margin-left:4.5rem;
+  padding-left:4.2rem;
+  
+  margin-top:1rem;
+  }
+  
+.home .titulo h2{
+  font-family:"Roboto",sans-serif;
+  
+  font-size:85px;
+  font-weight:900;
+  color:#fdf5f5;
+}
+
+.home .titulo h1{
+  font-family:"Roboto",sans-serif;
+  
+  font-size:85px;
+  font-weight:900;
+  color:#000000;
+}
+
+/*Decoradores home*/
+
+.home .titulo .fino{
+  font-family:"Roboto light",sans-serif;
+  
+  font-weight:100;
+}
+
+.home .titulo .doble{
+  color:#FDF5F5;
+}
+
+.home .titulo .move{
+  color:#000000;
+  
+  position:absolute;
+  right:30px;
+}
+
+/*Works*/
+
+
+.works{
+  display:flex;
+  
+  background-image:url("IMG/triangulo.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  
+  
+}
+
+.works .flex-cont{
+  margin-top:2rem;
+  padding-top:2rem;
+  
+  display:block;
+  flex-wrap:wrap;
+  
+  text-align:left;
+}
+
+.works .flex-cont h1{
+  text-align:left;
+  
+  margin-left:1rem;
+  padding-left:1rem;
+  
+  font-family:"Roboto light",sans-serif;
+  
+  
+  font-size:75px;
+  color:#000000;
+  font-weight:300;
+  
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+
+
+.works .flex-cont .container{
+  flex-wrap:wrap;
+  
+  display:inline-block;
+  position:relative;
+  
+  align-items:center;
+  
+  margin:2rem
+  padding:2rem;
+}
+
+.works .flex-cont .container .jobs{
+  margin-top:1rem;
+  padding-top:1rem;
+  
+ margin-left:6rem;
+ padding-left:6rem;
+ 
+ justify-content:space-arround;
+ 
+ text-align:Center;
+ 
+ transition:all 0.5s ease;
+ 
+}
+
+
+
+/*Config rectangulo*/
+
+
+.works .flex-cont .container .jobs .rectangle{
+  width:400px;
+  height:200px;
+  
+  margin-top:0.5rem;
+  
+  border:1px solid #000000;
+  
+  box-shadow:2px -2px 5px #4b494c, -2px 2px 10px #4b494c;
+  
+  background-color:#FdF5f5;
+}
+
+.works .flex-cont .container .jobs .rectangle p{
+  font-family:"Roboto",sans-serif;
+
+  color:#000000;
+  font-size:15px;
+}
+
+.works .flex-cont .container .jobs:hover{
+  transform:scale(1.2);
+  
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+
+/*Fin config rectangulo*/
+
+
+.works .flex-cont .container .jobs a{
+  font-family:"Roboto",sans-serif;
+  
+  color:#000000;
+  font-size:17px;
+  
+  text-align:Center;
+}
+
+
+/*About me*/
+
+
+.about-me{
+  display:flex;
+  
+  background-image:url("IMG/lineas.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+
+.about-me .yo{
+  position:relative;
+  left:700px;
+  
+  width:500px;
+  height:500px;
+}
+
+.about-me .yo h1{
+  margin-top:2rem;
+  padding-top:1rem;
+  margin-bottom:1rem;
+  
+  text-align:left;
+  
+  font-family:"Roboto light",sans-serif;
+  
+  
+  font-size:75px;
+  color:#000000;
+  font-weight:300;
+  
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+
+
+.about-me .yo p{
+  font-family:"Roboto light",sans-serif;
+  
+  color:#000000;
+  font-size:20px;
+  font-weight:400;
+}
+
+/*About me decoradores*/
+
+.about-me .yo .bold{
+  font-family:"Roboto",sans-serif;
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+
+
+
+/*Contacts*/
+
+
+.contact{
+  display:flex;
+  
+  background-image:url("IMG/cuadrado.png");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.contact .container{
+  margin-left:1.5rem;
+  padding-left:1.5rem;
+}
+
+.contact .container h1{
+  margin-top:2rem;
+  padding-top:1rem;
+  
+  margin-bottom:1rem;
+  
+  margin-left:1rem;
+  padding-left:1rem;
+  
+  text-align:left;
+  
+  font-family:"Roboto light",sans-serif;
+  
+  
+  font-size:75px;
+  color:#000000;
+  font-weight:300;
+  
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+
+.contact .container .redes h2{
+  font-family:"Roboto",sans-serif;
+  
+  color:#000000;
+  font-size:20px;
+  font-weight:normal;
+  
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+
+  margin-left:1rem;
+  padding-left:1rem;
+}
+
+.contact .container .redes img{
+  display:inline;
+  
+  margin:1rem;
+  padding:1rem;
+  
+  width:40px;
+  height:40px;
+  
+  transition:all 0.5s ease;
+}
+
+
+.contact .container .redes img:hover{
+  transform:scale(1.2);
+}
+
+
+
+/*Responsive design*/
+
+
+
+
+
+@media (max-width: 850px){
+  
+  section{
+    overflow-x:hidden;
+  }
+
+  .home .titulo {
+    margin-left:1.5rem;
+    padding-left:1.2rem;
+    
+    margin-top:1rem;
+    padding-top:1rem;
+}
+
+.home .titulo h2{
+  font-size:55px;
+}
+
+.home .titulo h1{
+  font-size:60px;
+}
+
+.home .titulo .move{
+  font-size:50px;
+}
+
+.works .flex-cont h1{
+  font-size:60px;
+}
+
+
+.about-me .yo{
+  position:relative;
+  left:300px;
+  
+  width:500px;
+  height:500px;
+}
+
+
+.about-me .yo h1{
+  margin-top:1rem;
+  padding-top:0.5rem;
+  margin-bottom:1rem;
+  
+  font-size:60px;
+  
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+
+
+.about-me .yo p{
+  font-size:15px;
+  font-weight:400;
+}
+
+
+.contact .container h1{
+  font-size:60px;
+}
+
+
+}
+
+
+
+/*Tablet M*/
+
+@media (max-width: 770px){
+  
+  .home .titulo h2, .home .titulo .doble{
+    font-size:54px;
+  }
+  
+  .home .titulo .move{
+    font-size:50px;
+  }
+  
+  .about-me .yo{
+  position:relative;
+  left:250px;
+}
+  
+}
+
+
+/*Header responsive*/
+
+@media (max-width: 600px){
+
+header{
+  display:flex;
+  
+  position:fixed;
+  z-index:1000;
+  top:0;
+  
+  background-color:#000000;
+ 
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+header .nav{
+  
+  text-align:center;
+  
+  justify-content:space-arround;
+  background-color:#FDF5F5;
+}
+
+header .nav .nav-bar{
+  
+  background-color:#000000;
+  
+  text-align:center;
+  align-items:Center;
+  justify-content:space-arround;
+  
+  width:100%;
+  
+  margin-top:0;
+  padding-top:0;
+  
+  padding-bottom:1rem;
+}
+
+header .nav .nav-bar a{
+    text-align:center;
+    
+    padding:1rem;
+    margin:1rem;
+    
+    margin-top:2rem;
+    padding-top:2rem;
+    
+    margin-bottom:2rem;
+    padding-bottom:2rem;
+    
+    font-size:17px;
+    color:#FDF5F5;
+  }
+  
+  .home .titulo{
+    margin-top:2.5rem;
+    padding-top:2.5rem;
+  }
+  
+  .home .titulo h2{
+    font-size:48px;
+  }
+  
+  .home .titulo h1, .home .titulo .doble{
+    font-size:50px;
+    
+    color:#000000;
+  }
+  
+  .works .flex-cont .container .jobs{
+    margin-left:0;
+  }
+  
+  .about-me .yo{
+    position:relative;
+  left:200px;
+  
+  width:350px;
+  height:650px;
+  }
+  
+  
+}
+
+
+
+
+/* Movil L*/
+
+@media (max-width: 430px){
+
+header .nav .nav-bar  a{
+  margin-right:0;
+  padding-right:0;
+}
+
+.home .titulo{
+  margin-top:3rem;
+  padding-top:3rem
+}
+
+.home .titulo h2, .home .titulo h1, .home .titulo .doble, .home .titulo .move{
+  text-align:left;
+  
+    font-size:45px;
+    
+    color:#000000;
+  }
+  
+  .home .titulo h1{
+    padding-top:0.5rem;
+    margin-top:0.5rem;
+  }
+  
+  .home .titulo .move{
+    margin-top:0.5rem;
+    padding-top:0.5rem;
+    
+    margin-right:1rem;
+  }
+  
+  .works .flex-cont h1{
+    font-size:50px;
+  }
+  
+  .works .flex-cont .container .jobs{
+    margin-left:0;
+    padding-left:1rem;
+    
+  }
+  
+  .about-me .yo{
+    position:relative;
+  left:100px;
+  
+  width:300px;
+  height:700px;
+  }
+  
+  .about-me .yo h1{
+    font-size:50px;
+  }
+  
+  .about-me .yo p{
+    font-size:16px;
+  }
+  
+  .contact .container h1{
+    font-size:50px;
+    
+    margin-top:0.5rem;
+    padding-top:0.5rem;
+  }
+  
+}
+
+
+/*Movil M*/
+
+@media (max-width: 380px){
+  
+  header .nav .nav-bar a{
+    font-size:15px;
+    
+    margin-left:0;
+    
+  padding-right:0.3rem;
+  margin-right:0.2rem;
+}
+
+header{
+  text-align:center;
+}
+
+.home .titulo{
+  margin-top:3rem;
+  padding-top:3rem
+  
+  text-align:center;
+}
+
+.home .titulo h2, .home .titulo h1, .home .titulo .doble, .home .titulo .move{
+  text-align:left;
+  
+  margin-right:0;
+  padding-right:0;
+  
+  margin-left:0;
+  padding-left:0;
+}
+  
+.home .titulo h1, .home .titulo .doble{
+  font-size:35px;
+  
+    padding:0;
+    margin:0;
+  }
+  
+  .home .titulo h1{
+    margin-top:0.5rem;
+    padding-top:0.5rem;
+  }
+  
+  .home .titulo .move{
+    margin-top:1rem;
+    padding-top:1rem;
+    
+    font-size:40px;
+  }
+  
+  .works .flex-cont .container .jobs{
+    margin-left:1rem;
+    padding-left:1rem;
+    
+  }
+  
+  .works .flex-cont .container .jobs .rectangle{
+    width:300px;
+  }
+  
+  .about-me .yo{
+    position:relative;
+  left:50px;
+  
+  width:300px;
+  height:700px;
+  }
+  
+  .about-me .yo h1{
+    font-size:50px;
+  }
+  
+  .about-me .yo p{
+    font-size:16px;
+  }
+  
+  .contact .container{
+    margin-left:0;
+    padding-left:0;
+  }
+  
+
+}
+
+
+
+/*Movil S*/
+
+@media (max-width: 320px){
+  
+  .home .titulo h2{
+    font-size:35px;
+  }
+  
+  .home .titulo h1, .home .titulo .doble{
+    font-size:30px;
+  }
+  
+ .home .titulo .move{
+    font-size:35px;
+ }
+ 
+ .works .flex-cont .container .jobs{
+    margin-left:0.5rem;
+    padding-left:0;
+    
+  }
+  
+  .about-me .yo{
+    position:relative;
+  left:15px;
+  
+  width:300px;
+  height:700px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
